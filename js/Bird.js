@@ -34,7 +34,7 @@ Bird.prototype.render = function(){
     let renderY = - this.height/2;
     this.ctx.save();
     this.ctx.translate(this.x, this.y);
-    let angle = Math.PI/10 * this.velY/16;
+    let angle = Math.PI/12 * this.velY/16;
     this.ctx.rotate(angle);
     this.ctx.drawImage(this.sprites[this.spriteIndex], renderX, renderY);
 
